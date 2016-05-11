@@ -8,7 +8,7 @@
                 'with_bmp%': 'false',
                 'with_raw%': 'true'
             },
-            "libraries": [ "./lib" ]
+            "include_dirs": [ "./lib" ]
         }, {
             'variables': {
                 'with_png%': 'true',

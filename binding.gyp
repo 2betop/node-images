@@ -2,7 +2,6 @@
     'conditions': [
         ['OS=="win"', {
             'variables': {
-                'THIRD_PATH%': 'D:/dev/node/node-images/third',
                 'with_png%': 'true',
                 'with_jpeg%': 'true',
                 'with_gif%': 'true',

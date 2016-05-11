@@ -30,12 +30,10 @@
             'src/Raw.cc'
         ],
         "include_dirs" : [
-            "<!(node -e \"require('nan')\")"
+            "<!(node -e \"require('nan')\")", "./lib"
         ],
         'conditions': [
-            ['OS=="win"', {
-                "include_dirs": [ "./lib" ]
-            }, {}],
+            ['OS=="win"', {}, {}],
             ['with_png=="true"', {
                 'defines': ['HAVE_PNG'],
                 'sources': ['src/Png.cc'],

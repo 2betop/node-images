@@ -7,7 +7,8 @@
                 'with_gif%': 'true',
                 'with_bmp%': 'false',
                 'with_raw%': 'true'
-            }
+            },
+            "libraries": [ "./lib" ]
         }, {
             'variables': {
                 'with_png%': 'true',

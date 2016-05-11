@@ -30,7 +30,7 @@
             'src/Raw.cc'
         ],
         "include_dirs" : [
-            "<!(node -e \"require('nan')\")", "lib"
+            "<!(node -e \"require('nan')\")", "C:\\projects\\node-images\\lib"
         ],
         'conditions': [
             ['OS=="win"', {}, {}],

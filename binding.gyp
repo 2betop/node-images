@@ -7,8 +7,7 @@
                 'with_gif%': 'true',
                 'with_bmp%': 'false',
                 'with_raw%': 'true'
-            },
-            "include_dirs": [ "./lib" ]
+            }
         }, {
             'variables': {
                 'with_png%': 'true',
@@ -34,7 +33,9 @@
             "<!(node -e \"require('nan')\")"
         ],
         'conditions': [
-            ['OS=="win"', {}, {}],
+            ['OS=="win"', {
+                "include_dirs": [ "./lib" ]
+            }, {}],
             ['with_png=="true"', {
                 'defines': ['HAVE_PNG'],
                 'sources': ['src/Png.cc'],

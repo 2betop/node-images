@@ -7,6 +7,7 @@
         ],
         'include_dirs': [
             '../third-party/giflib/lib',
+            '../../lib'
         ],
         'dependencies': [
         ],
